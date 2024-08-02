@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To win, either get <i>all</i> <span class="zeros">zeros</span>, or all <span class="zeros">zeros</span>, <span id="negone">-1</span> and <span id="one">1</span>.</h1>
+        <h3>Left click (pull) - add 2, subtract 1 from each neighbor</h3>
+        <h3>Right click (push) - subtract 2, add 1 to each neighbor</h3>
+        <div class="center">
+            <svg width="400" height="400">
+                <g>
+                    <polygon class="triangle lower-left" points="200, 200 136, 310 72, 200" />
+                    <polygon class="triangle upper-left" points="200, 200 72, 200 136, 90" />
+                    <polygon class="triangle upper-middle" points="200, 200 136, 90 264, 90" />
+                    <polygon class="triangle upper-right" points="200, 200 264, 90 328, 200" />
+                    <polygon class="triangle lower-right" points="200, 200 328, 200 264, 311" />
+                    <polygon class="triangle lower-middle" points="200, 200 136, 310 264, 311" />
+                    <text class="triangle-text" x="110" y="254">1</text>
+                    <text class="triangle-text" x="112" y="176">-8</text>
+                    <text class="triangle-text" x="176" y="148">5</text>
+                    <text class="triangle-text" x="240" y="176">7</text>
+                    <text class="triangle-text" x="240" y="254">-2</text>
+                    <text class="triangle-text" x="176" y="286">-3</text>
+    
+                </g>
+            </svg>
+        </div>
+        <div class="center">
+            <button class="btn" id="play-again">Play again</button>
+        </div>
+    </div>
+</body>
+<script src="./js/logic.js"></script>
+</html>

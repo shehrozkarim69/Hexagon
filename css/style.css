@@ -1,0 +1,98 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #232b2b;
+	margin: 0;
+	gap: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.zeros {
+	color: rgb(180, 180, 180);
+}
+
+#negone {
+	color: rgb(255, 128, 128);
+}
+
+#one {
+	color: rgb(128, 255, 128);
+}
+
+.container {
+}
+
+.triangle {
+	stroke: #000;
+	/* 	fill: #7f7ddb; */
+	stroke-width: 1px;
+	cursor: pointer;
+}
+
+.triangle-text:hover {
+	cursor: pointer;
+}
+
+.triangle-text {
+	fill: #fff;
+	font-size: 3em;
+	paint-order: stroke;
+	stroke: #000;
+	stroke-width: 2px;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+}
+
+.btn {
+	font-size: 2em;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	background-color: #ffec5e;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #fff6b5;
+}
+.btn:active {
+	background-color: #ffec5e;
+}
+
+#play-again {
+	opacity: 0;
+	transition: 200ms ease-in-out;
+}
+
+.lower-left {
+	fill: hsl(120deg 10% 50%);
+}
+
+.upper-left {
+	fill: hsl(0deg 80% 50%);
+}
+
+.upper-middle {
+	fill: hsl(120deg 50% 50%);
+}
+
+.upper-right {
+	fill: hsl(120deg 70% 50%);
+}
+
+.lower-right {
+	fill: hsl(0deg 20% 50%);
+}
+
+.lower-middle {
+	fill: hsl(0deg 30% 50%);
+}
